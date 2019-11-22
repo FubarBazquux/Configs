@@ -1,9 +1,9 @@
 set -g default-terminal "screen-256color"
 
 # remap command-b to command-a
-#unbind C-b
-#set-option -g prefix C-a
-#bind-key C-a send-prefix
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
 
 # remap window splitting keys
 bind \ split-window -h -c '#{pane_current_path}'
