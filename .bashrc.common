@@ -1,7 +1,10 @@
 #alias ls='ls -G' # MacOS
 alias ls='ls --color=auto' # LinuxOS
 alias la='ls -A'
-alias ll='ls -alF'
+alias ll='la -lhF'
+alias cl='clear; ls'
+alias cla='clear; la'
+alias cll='clear; ll'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -9,7 +12,7 @@ alias egrep='egrep --color=auto'
 
 alias resource="source ~/.bashrc"
 
-# no dupblicate lines or lines starting with space in the history
+# no duplicate lines or lines starting with space in the history
 HISTCONTROL=ignoreboth
 
 # append, don't overwrite history
