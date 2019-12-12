@@ -3,6 +3,7 @@ alias ls='ls --color=auto' # LinuxOS
 alias la='ls -A'
 alias ll='la -lhF'
 alias cl='clear; ls'
+alias cls='cl'
 alias cla='clear; la'
 alias cll='clear; ll'
 
