@@ -1,5 +1,5 @@
-#alias ls='ls -G' # MacOS
-alias ls='ls --color=auto' # LinuxOS
+alias ls='ls -G' # MacOS
+#alias ls='ls --color=auto' # LinuxOS
 alias la='ls -A'
 alias ll='la -lhF'
 alias cl='clear; ls'
@@ -11,7 +11,8 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias resource="source ~/.bashrc"
+alias resource="source ~/.bash_profile" # MacOS
+#alias resource="source ~/.bashrc" # LinuxOS
 
 # no duplicate lines or lines starting with space in the history
 HISTCONTROL=ignoreboth
