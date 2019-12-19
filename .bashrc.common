@@ -1,5 +1,13 @@
-alias ls='ls -G' # MacOS
-#alias ls='ls --color=auto' # LinuxOS
+kernel="$(uname -s)"
+case "${kernel}" in
+    Linux*)
+        alias ls='ls --color=auto'
+        ;;
+    Darwin*)
+        alias ls="ls -G"
+        ;;
+esac
+
 alias la='ls -A'
 alias ll='la -lhF'
 alias cl='clear; ls'
