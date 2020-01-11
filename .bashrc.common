@@ -19,6 +19,8 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+alias topCPU='top -o %CPU'
+
 alias resource="source ~/.bashrc"
 
 # no duplicate lines or lines starting with space in the history
