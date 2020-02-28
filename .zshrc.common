@@ -1,0 +1,32 @@
+kernel="$(uname -s)"
+case "${kernel}" in
+    Linux*)
+        alias ls='ls --color=auto'
+        ;;
+    Darwin*)
+        alias ls="ls -G"
+        ;;
+esac
+
+alias la='ls -A'
+alias ll='la -lhF'
+alias cl='clear; ls'
+alias cls='cl'
+alias cla='clear; la'
+alias cll='clear; ll'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias resource="source ~/.bashrc"
+
+# no duplicate lines or lines starting with space in the history
+HISTCONTROL=ignoreboth
+
+# append, don't overwrite history
+setopt appendhistory
+
+# history size and file length
+HISTSIZE=1000
+HISTFILESIZE=2000
