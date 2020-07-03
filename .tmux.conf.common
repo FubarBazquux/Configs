@@ -6,7 +6,7 @@ set-option -g prefix C-a
 bind-key C-a send-prefix
 
 # remap window splitting keys
-bind \ split-window -h -c '#{pane_current_path}'
+bind '\' split-window -h -c '#{pane_current_path}'
 bind - split-window -v -c '#{pane_current_path}'
 unbind '"'
 unbind %
