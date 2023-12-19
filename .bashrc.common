@@ -35,3 +35,5 @@ HISTFILESIZE=2000
 
 # resize window if needed
 shopt -s checkwinsize
+
+alias tmux='tmux-non-dead.tmux'
