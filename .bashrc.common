@@ -37,3 +37,6 @@ HISTFILESIZE=2000
 shopt -s checkwinsize
 
 alias tmux='tmux-non-dead.tmux'
+
+export VISUAL=nvim
+export EDITOR="$VISUAL"
